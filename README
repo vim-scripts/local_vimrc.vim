@@ -1,0 +1,8 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=727
+
+This plugin recursivelly sources the _vimrc_local.vim files present from $HOME to the directory of the current buffer every time we change buffer.
+
+Example: current dir is ~/a/b/c. Files are sourced in this order:
+~/_vimrc_local.vim, then ~/a/_vimrc_local.vim, ~/a/b/_vimrc_local.vim, and finally ~/a/b/c/_vimrc_local.vim
+
+No messages issued if some of _vimrc_local.vim does not exist.
